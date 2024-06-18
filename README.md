@@ -8,6 +8,17 @@
 ### 720 연금 복권 추첨
 > 1 ~ 5조, 000000 ~ 999999 의 숫자를 랜덤으로 추출
 
+## 결과
+
+### OpenGraph
+![OpenGraph](./img/result/open_graph_result.png)
+
+### Lotto
+![OpenGraph](./img/result/lotto_result.png)
+
+### 720
+![OpenGraph](./img/result/720_result.png)
+
 ## devlop
 * HTML, CSS, JavaScript
 

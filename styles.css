@@ -1,5 +1,19 @@
+@font-face {
+    font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'TTLaundryGothicB';
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
@@ -28,6 +42,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .selector-button, .draw-button {
@@ -37,6 +52,7 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 5px;
 }
 
 .selector-button {
@@ -62,7 +78,47 @@ h1 {
 }
 
 .result {
+    font-family: 'Pretendard-Regular';
     font-size: 18px;
     margin-top: 10px;
     color: #555;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .selector-button, .draw-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .result {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .selector-button, .draw-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .result {
+        font-size: 14px;
+    }
 }
